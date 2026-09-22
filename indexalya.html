@@ -3,49 +3,361 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perkenalan Diri - Alya</title>
+    <title>Portfolio Alya</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f3ff;
+            color: #29243a;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        nav h2 {
+            color: #7c4dff;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #29243a;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #7c4dff;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+            gap: 40px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text p:first-child {
+            color: #7c4dff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin: 15px 0;
+        }
+
+        .hero h1 span {
+            color: #7c4dff;
+        }
+
+        .hero p {
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 25px;
+            background: #7c4dff;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-4px);
+            background: #6035d6;
+        }
+
+        .profile {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7c4dff, #c8b6ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+            box-shadow: 0 15px 35px rgba(124,77,255,0.3);
+        }
+
+        /* SECTION */
+        section {
+            padding: 80px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        /* ABOUT */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .skill-card {
+            background: white;
+            width: 220px;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .skill-card h3 {
+            color: #7c4dff;
+            margin-bottom: 10px;
+        }
+
+        .skill-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        /* DATA DIRI */
+        .data {
+            background: #eee9ff;
+        }
+
+        .data-box {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .data-box p {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .data-box strong {
+            display: inline-block;
+            width: 120px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #29243a;
+            color: white;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            nav {
+                padding: 20px;
+            }
+
+            nav a {
+                margin-left: 8px;
+                font-size: 13px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Halo, Saya Alya!</h1>
+    <!-- NAVBAR -->
+    <nav>
+        <h2>Alya.</h2>
 
-    <h2>Perkenalan Diri</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#data">Profile</a>
+        </div>
+    </nav>
 
-    <p>
-        Halo! Nama saya Alya. Saya adalah siswa SMK PGRI 1 Tangerang
-        dari jurusan Desain Komunikasi Visual (DKV).
-    </p>
 
-    <h2>Tentang Saya</h2>
+    <!-- HOME -->
+    <section class="hero" id="home">
 
-    <ul>
-        <li>Nama: Alya</li>
-        <li>Sekolah: SMK PGRI 1 Tangerang</li>
-        <li>Jurusan: Desain Komunikasi Visual</li>
-        <li>Kelas: XI DKV 2</li>
-        <li>Keahlian: Video Editing dan Desain Grafis</li>
-    </ul>
+        <div class="hero-text">
 
-    <h2>Keahlian</h2>
+            <p>HELLO, I'M</p>
 
-    <p>
-        Saya memiliki minat dalam bidang desain dan editing video.
-        Beberapa software yang pernah saya gunakan adalah Canva,
-        Adobe, dan CapCut.
-    </p>
+            <h1>Madina <span>Alya</span></h1>
 
-    <h2>Hobi</h2>
+            <p>
+                Saya adalah siswa SMK jurusan Desain Komunikasi Visual
+                yang tertarik dengan dunia desain, kreativitas,
+                dan video editing.
+            </p>
 
-    <p>
-        Saya suka menonton film dan melakukan kegiatan yang berhubungan
-        dengan desain dan kreativitas.
-    </p>
+            <a href="#about" class="button">
+                Kenal Saya →
+            </a>
 
-    <h2>Terima Kasih!</h2>
+        </div>
 
-    <p>
-        Terima kasih sudah mengunjungi halaman perkenalan saya.
-    </p>
+        <div class="profile">
+            🎨
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about-content">
+
+            <p>
+                Halo! Nama saya Alya. Saya merupakan siswa
+                SMK PGRI 1 Tangerang dari jurusan
+                Desain Komunikasi Visual (DKV).
+            </p>
+
+            <br>
+
+            <p>
+                Saya tertarik dengan dunia kreatif, terutama
+                video editing dan desain grafis. Saya senang
+                mencoba hal-hal baru dan mengembangkan kemampuan
+                saya melalui berbagai tugas dan proyek DKV.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill-card">
+                <div class="skill-icon">🎬</div>
+                <h3>Video Editing</h3>
+                <p>Editing video menggunakan CapCut.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>Graphic Design</h3>
+                <p>Membuat desain menggunakan Canva dan Adobe.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">📸</div>
+                <h3>Photography</h3>
+                <p>Mempelajari teknik dasar fotografi.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">✨</div>
+                <h3>Creative</h3>
+                <p>Mengembangkan ide kreatif untuk berbagai proyek.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROFILE -->
+    <section class="data" id="data">
+
+        <h2>My Profile</h2>
+
+        <div class="data-box">
+
+            <p>
+                <strong>Nama</strong> Madina Alya
+            </p>
+
+            <p>
+                <strong>Sekolah</strong> SMK PGRI 1 Tangerang
+            </p>
+
+            <p>
+                <strong>Jurusan</strong> Desain Komunikasi Visual
+            </p>
+
+            <p>
+                <strong>Kelas</strong> XI DKV 2
+            </p>
+
+            <p>
+                <strong>Fokus</strong> Video Editing & Design
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Alya | DKV Student</p>
+    </footer>
 
 </body>
 </html>
