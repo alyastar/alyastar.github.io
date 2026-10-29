@@ -10,3 +10,4 @@
 <img width="2813" height="3750" alt="Setiap perjalanan besar selalu dimulai dari langkah kecil—dan Roughneck 1991 lahir dari mimpi sederhana menghadirkan streetwear yang bukan hanya sekadar pakaian, tetapi bagian dari cerita hidup pa" src="https://github.com/user-attachments/assets/8b289424-a0f4-44dd-8934-dc3d62112587" />
 <img width="638" height="1136" alt="Promosi Film" src="https://github.com/user-attachments/assets/15bcdea5-d6e1-4608-916b-cc8fb746e63c" />
 <img width="1306" height="773" alt="wedding alya (2)" src="https://github.com/user-attachments/assets/d6787038-a59b-4ab8-837d-0be786709894" />
+<img width="392" height="220" alt="image" src="https://github.com/user-attachments/assets/37080f35-4e11-4626-bb0b-16825bd7da10" />
